@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #3b4664;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+/* calculator container*/
+.calc{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+}
+
+/* title  */
+.title{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.title-heading{
+    font-size: 1.5rem;
+}
+
+/* toggle to change theme */
+
+.themes{
+    margin-left: auto;
+}
+
+/* toggle switch */
+#custom-toggle{
+    width: 2rem;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    height: 1rem;
+}
+
+
+
+/*screen */
+.screen{
+    height: 5rem;
+    border: none;
+    margin-top: 1rem;
+    color: whitesmoke;
+    padding: 0 2rem 0 2rem;
+    text-align: end;
+    background-color: #252d42;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* calculators buttons */
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: #252d42;
+    color: #3b4664;
+}
+
+
+
+/* all buttons  */
+
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    color: inherit;
+    background-color: #eae3dc;
+    transition-duration: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+
+/* delete reset equals button */
+
+.del{
+    background-color: #647199;
+    color: whitesmoke;
+    font-size: 0.7rem;
+    padding: 0;
+
+}
+.reset{
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #647199;
+    color: whitesmoke;
+}
+
+.equals{
+    width: auto;
+    background-color: #d13f2f;
+    color: whitesmoke;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/* footer  */
+
+footer{
+    color: whitesmoke;
+}
+
+
+/* responsive (for mobile devices)*/
+
+@media screen and (max-width: 1000px){
+
+    body{
+        padding-top: 4rem;
+        min-height: auto;
+        /* padding: 4rem; */
+    }
+
+    /* calculator container */
+    .calc{
+        width: 80%;
+    }
+
+    /*screen */
+    .screen{
+        width: auto;
+    }
+
+    /* buttons */
+    .btn{
+        font-size:1.2rem;
+        border-radius: 2px;
+    }
+
+    .del{
+        font-size: 0.5rem;
+    }
+
+    .reset , .equals{
+        width: auto;
+    }
+}

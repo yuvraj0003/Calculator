@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <title>Calculator</title>
+        <!-- css  -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="calc"> 
+            <!-- title bar  -->
+            <div class="title">
+                <span class="title-heading">calc</span>
+
+                <!-- theme switcher  -->
+
+                <div class="themes">
+                <span>themes</span>
+                &nbsp;
+                <input type="range" name="points" min="1" step="1" id="custom-toggle" class="tgl-def" max="3" onchange="toggle(this.value)">
+                </div>
+            </div>
+
+
+            <!-- screen of calculator -->
+            <input type="text" class="screen" readonly>
+            
+
+            <!-- calculator buttons  -->
+            <div class="container">
+                
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn del">DEL</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">+</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">-</button>
+                <button class="btn">.</button>
+                <button class="btn">0</button>
+                <button class="btn">/</button>
+                <button class="btn">x</button>
+                <button class="btn reset">RESET</button>
+                <button class="btn equals">=</button>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy made by yuvraj</p>
+        </footer>
+
+        <!-- jquery  -->
+        <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+        <!-- javascript  -->
+        <script src="index1.js"></script>
+    </body>
+</html>
